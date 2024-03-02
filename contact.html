@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0c1020;
+        color: #fff;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #0c1020;
+        padding: 10px;
+    }
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    .navbar a.active,
+    .navbar a:hover {
+        background: linear-gradient(45deg,#f06,#3cf);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .container {
+        width: 80%;
+        max-width: 600px;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin: 100px auto;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    .contact-info {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .contact-info li {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 20px;
+    }
+    .contact-info li:last-child {
+        border-bottom: none;
+    }
+    .contact-info li strong {
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #3cf; /* Change color to a shade of blue */
+        margin-bottom: 5px;
+    }
+    .contact-info li span {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .contact-info li a {
+        color: #3cf; 
+        text-decoration: none;
+    }
+    .contact-info li a:hover {
+        text-decoration: underline;
+    }
+    .lets-connect {
+        background-color: #3cf; 
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    .lets-connect h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .lets-connect form {
+        text-align: left;
+    }
+    .lets-connect input,
+    .lets-connect textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+    .lets-connect input:focus,
+    .lets-connect textarea:focus {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .lets-connect button {
+        background-color: #f06; 
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .lets-connect button:hover {
+        background-color: #f00; 
+    }
+</style>
+</head>
+<body>
+<div class="navbar">
+    <a href="home.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="skill.html">Skills</a>
+    <a href="project.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</div>
+<div class="container">
+    <h1>Contact Information</h1>
+    <ul class="contact-info">
+        <li>
+            <strong>Name:</strong>
+            <span>Sai Akshhayaa.M.P</span>
+        </li>
+        <li>
+            <strong>Mail:</strong>
+            <span>saiakshhayaa.mp2022ece@sece.ac.in</span>
+        </li>
+        <li>
+            <strong>Phone:</strong>
+            <span>+1234567890</span>
+        </li>
+        <li>
+            <strong>Location:</strong>
+            <span>Tamilnadu, India</span>
+        </li>
+    </ul>
+    <div class="lets-connect">
+        <h2>Let's Connect</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

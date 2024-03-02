@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0c1020;
+      color: #ffffff; 
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-name {
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      width: 100%;
+      background-color: #1a1e2a; 
+      border-radius: 5px;
+      height: 20px;
+      margin-top: 5px;
+      position: relative;
+    }
+
+    .skill-level {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: #007bff; 
+      border-radius: 5px;
+      animation: fillWidth 2s ease; 
+    }
+
+    @keyframes fillWidth {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    /* Navigation Bar Styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 20px;
+      background-color: #0c1020;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+
+    .navbar li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .navbar li a:hover {
+      background-color: #0056b3; 
+      border-radius: 20px;
+    }
+
+    .navbar a.active,
+    .navbar a:hover {
+      background: linear-gradient(45deg, #f06, #3cf);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Skills</h1>
+    <div class="skill">
+      <div class="skill-name">C</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width:85%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">PYTHON</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Java</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 65%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">SQL</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 70%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 82%;"></div>
+        </div>
